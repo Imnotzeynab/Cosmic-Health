@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cosmic Health — Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SPACE BACKGROUND
+         ===================================================== -->
+
+    <video
+        class="space-background"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+
+        <source
+            src="assets/space.mp4"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <div class="space-overlay"></div>
+
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header>
+
+        <div class="logo">
+            Cosmic Health
+        </div>
+
+
+        <nav class="nav">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="health.html">
+                        Health
+                    </a>
+                </li>
+
+                <li>
+                    <a href="history.html">
+                        History
+                    </a>
+                </li>
+
+                <li>
+                    <a href="assistant.html">
+                        Assistant
+                    </a>
+                </li>
+ <li>
+                <a href="assistant.html">Assistant</a>
+            </li>
+           
+            </ul>
+
+        </nav>
+
+
+        <a
+            href="health.html"
+            class="btn"
+        >
+            Health Data
+        </a>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         ASSISTANT PAGE
+         ===================================================== -->
+
+    <main class="assistant-page">
+
+
+        <!-- =================================================
+             ASSISTANT HEADING
+             ================================================= -->
+
+        <section class="assistant-heading">
+
+            <div class="assistant-eyebrow">
+                COSMIC HEALTH SYSTEM
+            </div>
+
+
+            <h1>
+                HEALTH
+                <span>ASSISTANT</span>
+            </h1>
+
+
+            <p>
+                A local health decision-support assistant
+                designed to analyze your recorded health
+                trends and provide NASA-informed monitoring
+                guidance.
+            </p>
+
+
+            <div class="assistant-status">
+
+                <span class="assistant-status-dot"></span>
+
+                LOCAL • OFFLINE CAPABLE
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ASSISTANT CONTAINER
+             ================================================= -->
+
+        <section class="assistant-container">
+
+
+            <!-- =============================================
+                 TOP BAR
+                 ============================================= -->
+
+            <div class="assistant-topbar">
+
+
+                <div class="assistant-brand">
+
+
+                    <div class="assistant-brand-icon">
+                        ✦
+                    </div>
+
+
+                    <div class="assistant-brand-text">
+
+                        <strong>
+                            COSMIC HEALTH ASSISTANT
+                        </strong>
+
+                        <small>
+                            HEALTH DECISION SUPPORT
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="assistant-local-label">
+                    PROCESSING LOCALLY
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 CHAT
+                 ============================================= -->
+
+            <div
+                class="assistant-chat"
+                id="assistant-chat"
+            >
+
+
+                <!-- =========================================
+                     WELCOME MESSAGE
+                     ========================================= -->
+
+                <div
+                    class="assistant-welcome"
+                    id="assistant-welcome"
+                >
+
+                    <div class="assistant-welcome-icon">
+                        ✦
+                    </div>
+
+
+                    <h2>
+                        How can I help?
+                    </h2>
+
+
+                    <p>
+                        I can help you understand your
+                        recorded health trends, identify
+                        changes in your monitoring data,
+                        explain flagged areas, and provide
+                        NASA-informed health guidance.
+                    </p>
+
+
+                    <!-- =====================================
+                         QUICK QUESTIONS
+                         ===================================== -->
+
+                    <div class="assistant-quick-actions">
+
+
+                        <button
+                            class="assistant-quick-btn"
+                            type="button"
+                            data-question="How is my health trending?"
+                        >
+                            Health trend
+                        </button>
+
+
+                        <button
+                            class="assistant-quick-btn"
+                            type="button"
+                            data-question="What is my current health status?"
+                        >
+                            Current status
+                        </button>
+
+
+                        <button
+                            class="assistant-quick-btn"
+                            type="button"
+                            data-question="How is my sleep trending?"
+                        >
+                            Sleep
+                        </button>
+
+
+                        <button
+                            class="assistant-quick-btn"
+                            type="button"
+                            data-question="What should I monitor?"
+                        >
+                            What to monitor
+                        </button>
+
+
+                        <button
+                            class="assistant-quick-btn"
+                            type="button"
+                            data-question="How does NASA-STD-3001 relate to this?"
+                        >
+                            NASA guidance
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     MESSAGES
+                     ========================================= -->
+
+                <div
+                    id="assistant-messages"
+                ></div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 INPUT AREA
+                 ============================================= -->
+
+            <div class="assistant-input-area">
+
+
+                <form
+                    id="assistant-form"
+                    autocomplete="off"
+                >
+
+
+                    <div class="assistant-input-wrapper">
+
+
+                        <input
+                            id="assistant-input"
+                            class="assistant-input"
+                            type="text"
+                            placeholder="Ask about your health..."
+                            aria-label="Ask the Cosmic Health Assistant"
+                        >
+
+
+                        <button
+                            id="assistant-send"
+                            class="assistant-send-btn"
+                            type="submit"
+                            aria-label="Send message"
+                        >
+                            ➤
+                        </button>
+
+
+                    </div>
+
+
+                </form>
+
+
+
+                <!-- =========================================
+                     INPUT FOOTER
+                     ========================================= -->
+
+                <div class="assistant-input-footer">
+
+
+                    <span class="assistant-input-hint">
+                        ENTER TO SEND
+                    </span>
+
+
+                    <span class="assistant-offline-status">
+                        ● LOCAL PROCESSING
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             DISCLAIMER
+             ================================================= -->
+
+        <section class="assistant-disclaimer">
+
+            <p>
+                COSMIC HEALTH IS A HEALTH MONITORING AND
+                DECISION-SUPPORT SYSTEM. IT DOES NOT
+                DIAGNOSE MEDICAL CONDITIONS OR REPLACE
+                QUALIFIED MEDICAL PROFESSIONALS.
+                NASA-STD-3001 IS USED AS AN INFORMING
+                REFERENCE AND DOES NOT IMPLY NASA
+                ENDORSEMENT OF THIS APPLICATION.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         ASSISTANT JAVASCRIPT
+         ===================================================== -->
+
+    <!-- Existing health data layer -->
+    <script src="health-data.js"></script>
+
+
+    <!-- Health trend and decision rules -->
+    <script src="assistant/rules.js"></script>
+
+
+    <!-- Main assistant logic -->
+    <script src="assistant/assistant.js"></script>
+
+
+    <!-- Chat interface controller -->
+    <script src="assistant/assistant-ui.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Analyzing Health Data | Cosmic Health</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+```
+
+</head>
+
+<body>
+
+```
+<!-- SPACE BACKGROUND -->
+
+<img
+    src="images/space-background.jpg"
+    class="space-background"
+    alt=""
+>
+
+<div class="space-overlay"></div>
+
+
+<!-- HEADER -->
+
+<header class="site-header">
+
+    <div class="logo">
+        COSMIC HEALTH
+    </div>
+
+    <nav class="nav">
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="res.html">Health</a>
+            </li>
+
+            <li>
+                <a href="healthind.html">Check-In</a>
+            </li>
+
+            <li>
+                <a href="hh.html">History</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+             <li>
+                <a href="profile.html">Profile</a>
+            </li>
+ <li>
+                <a href="assistant.html">Assistant</a>
+            </li>
+           
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ANALYSIS PAGE -->
+
+<main class="analysis-page">
+
+
+    <section class="analysis-card">
+
+
+        <!-- SMALL TITLE -->
+
+        <div class="analysis-small-title">
+            COSMIC HEALTH
+        </div>
+
+
+        <!-- MAIN TITLE -->
+
+        <h1>
+
+            ANALYZING
+            <span>YOUR HEALTH DATA</span>
+
+        </h1>
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="analysis-description">
+
+            We are combining your responses with
+            medical guidance and mission health data.
+
+        </p>
+
+
+        <!-- LOADING ANIMATION -->
+
+        <div class="analysis-loader">
+
+            <div
+                id="analysis-progress"
+                class="analysis-progress"
+            ></div>
+
+        </div>
+
+
+        <!-- PERCENT -->
+
+        <div
+            id="analysis-percent"
+            class="analysis-percent"
+        >
+            0%
+        </div>
+
+
+        <!-- ANALYSIS STEPS -->
+
+        <div class="analysis-steps">
+
+
+            <!-- STEP 1 -->
+
+            <div
+                id="analysis-step-1"
+                class="analysis-step active"
+            >
+
+                <div class="analysis-step-icon">
+                    <span class="step-spinner"></span>
+                </div>
+
+                <span>
+                    CHECKING INDICATOR LEVELS...
+                </span>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div
+                id="analysis-step-2"
+                class="analysis-step"
+            >
+
+                <div class="analysis-step-icon">
+                    <span></span>
+                </div>
+
+                <span>
+                    ANALYZING PATTERNS...
+                </span>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div
+                id="analysis-step-3"
+                class="analysis-step"
+            >
+
+                <div class="analysis-step-icon">
+                    <span></span>
+                </div>
+
+                <span>
+                    COMPARING WITH THRESHOLDS...
+                </span>
+
+            </div>
+
+
+            <!-- STEP 4 -->
+
+            <div
+                id="analysis-step-4"
+                class="analysis-step"
+            >
+
+                <div class="analysis-step-icon">
+                    <span></span>
+                </div>
+
+                <span>
+                    GENERATING RESULTS...
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- COMPLETION MESSAGE -->
+
+        <div
+            id="analysis-complete"
+            class="analysis-complete"
+        >
+
+            ANALYSIS COMPLETE
+
+        </div>
+
+
+        <!-- VIEW RESULTS -->
+
+        <button
+            id="view-results-button"
+            class="continue-btn"
+            type="button"
+            style="display: none;"
+        >
+
+            VIEW RESULTS
+
+        </button>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- HEALTH DATA -->
+
+<script src="healthdata.js"></script>
+
+
+<!-- ANALYSIS -->
+
+<script src="analysis.js"></script>
+
+
+</body>
+
+</html>

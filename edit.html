@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Edit Symptom | Cosmic Health</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+
+</head>
+
+<body>
+
+
+<!-- SPACE BACKGROUND -->
+
+<img
+    src="images/space-background.jpg"
+    class="space-background"
+    alt=""
+>
+
+<div class="space-overlay"></div>
+
+
+<!-- HEADER -->
+
+<header class="site-header">
+
+    <div class="logo">
+        COSMIC HEALTH
+    </div>
+
+    <nav class="nav">
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="res.html">Health</a>
+            </li>
+
+            <li>
+                <a href="healthind.html">Check-In</a>
+            </li>
+
+            <li>
+                <a href="hh.html">History</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="profile.html">Profile</a>
+            </li>
+ <li>
+                <a href="assistant.html">Assistant</a>
+            </li>
+           
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- EDIT PAGE -->
+
+<main class="edit-page">
+
+    <section class="edit-heading">
+
+        <div class="small-title">
+            EDIT HEALTH INFORMATION
+        </div>
+
+        <h1>
+            Edit your
+            <span>symptom</span>
+        </h1>
+
+        <p>
+            Update the information below
+            or remove this symptom.
+        </p>
+
+    </section>
+
+
+    <!-- EDIT CONTENT -->
+
+    <section
+        id="edit-container"
+        class="edit-container"
+    ></section>
+
+
+    <!-- ACTIONS -->
+
+    <div class="edit-actions">
+
+        <button
+            id="update-button"
+            class="continue-btn"
+            type="button"
+        >
+            UPDATE
+        </button>
+
+        <button
+            id="delete-button"
+            class="delete-button"
+            type="button"
+        >
+            DELETE
+        </button>
+
+    </div>
+
+
+    <!-- DELETE CONFIRMATION -->
+
+    <div
+        id="delete-confirmation"
+        class="delete-confirmation"
+        style="display: none;"
+    >
+
+        <div class="delete-confirmation-box">
+
+            <div class="delete-confirmation-small-title">
+                CONFIRM ACTION
+            </div>
+
+            <h2>
+                Delete this symptom?
+            </h2>
+
+            <p id="delete-confirmation-message">
+                Are you sure you want to delete
+                this symptom from your health
+                check-in?
+            </p>
+
+            <div class="delete-confirmation-actions">
+
+                <button
+                    id="delete-no"
+                    class="delete-no-button"
+                    type="button"
+                >
+                    NO
+                </button>
+
+                <button
+                    id="delete-yes"
+                    class="delete-yes-button"
+                    type="button"
+                >
+                    YES, DELETE
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="healthdata.js"></script>
+<script src="edit.js"></script>
+
+
+</body>
+
+</html>

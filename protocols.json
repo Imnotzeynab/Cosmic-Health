@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "name": "Cosmic Health NASA-Informed Health Guidance",
+    "version": "1.0",
+    "purpose": "Local health-monitoring guidance for the Cosmic Health prototype",
+    "disclaimer": "This is an educational decision-support resource. It is not an official NASA medical system, does not diagnose medical conditions, and does not replace professional medical care.",
+    "offline": true
+  },
+
+  "general": {
+    "name": "General Health Monitoring",
+    "guidance": [
+      "Use personal baseline data when available.",
+      "Monitor trends across multiple observations rather than relying on a single measurement.",
+      "Record symptoms consistently, including severity and changes over time.",
+      "Consider multiple health indicators together.",
+      "Persistent or worsening symptoms should receive appropriate professional evaluation."
+    ]
+  },
+
+  "sleep": {
+    "name": "Sleep and Recovery",
+    "monitor": [
+      "sleep duration",
+      "sleep quality",
+      "sleep consistency",
+      "fatigue",
+      "alertness",
+      "concentration"
+    ],
+    "guidance": [
+      "Maintain a consistent sleep and recovery routine when possible.",
+      "Monitor repeated changes in sleep duration or quality.",
+      "Track fatigue and alertness alongside sleep data.",
+      "Look for trends across several days rather than relying on one night's data."
+    ],
+    "when_flagged": "A repeated deterioration in sleep or recovery indicators should prompt closer monitoring.",
+    "professional_care": "Persistent or severe sleep problems or fatigue should be discussed with an appropriate healthcare professional."
+  },
+
+  "cardiovascular": {
+    "name": "Cardiovascular Health",
+    "monitor": [
+      "heart rate",
+      "blood pressure",
+      "exercise response",
+      "cardiovascular symptoms",
+      "changes from personal baseline"
+    ],
+    "guidance": [
+      "Compare measurements with the individual's established baseline when available.",
+      "Monitor persistent changes rather than isolated readings.",
+      "Record symptoms together with cardiovascular measurements.",
+      "Track cardiovascular measurements over time."
+    ],
+    "when_flagged": "A persistent change from an individual's normal pattern should receive closer monitoring.",
+    "professional_care": "New, severe, or rapidly worsening cardiovascular symptoms require appropriate medical evaluation."
+  },
+
+  "musculoskeletal": {
+    "name": "Musculoskeletal Health",
+    "monitor": [
+      "muscle discomfort",
+      "joint discomfort",
+      "bone-related symptoms",
+      "mobility",
+      "physical function",
+      "pain severity"
+    ],
+    "guidance": [
+      "Record the location and severity of discomfort.",
+      "Monitor whether symptoms are improving, stable, or worsening.",
+      "Track changes in mobility and physical function.",
+      "Consider repeated symptoms as a trend."
+    ],
+    "when_flagged": "Increasing pain or declining physical function should prompt closer monitoring.",
+    "professional_care": "Persistent, severe, or worsening pain or loss of normal physical function should receive appropriate professional evaluation."
+  },
+
+  "respiratory": {
+    "name": "Respiratory Health",
+    "monitor": [
+      "breathing difficulty",
+      "cough",
+      "respiratory discomfort",
+      "changes in breathing",
+      "respiratory symptom severity"
+    ],
+    "guidance": [
+      "Record respiratory symptoms and their severity.",
+      "Monitor whether symptoms are improving or worsening.",
+      "Look for persistent changes across multiple observations.",
+      "Consider respiratory symptoms together with other health indicators."
+    ],
+    "when_flagged": "Persistent or worsening respiratory symptoms should receive closer attention.",
+    "professional_care": "Severe or rapidly worsening breathing difficulty requires immediate appropriate medical attention."
+  },
+
+  "mentalBehavioral": {
+    "name": "Mental and Behavioral Wellbeing",
+    "monitor": [
+      "stress",
+      "mood",
+      "concentration",
+      "behavioral changes",
+      "fatigue",
+      "overall wellbeing"
+    ],
+    "guidance": [
+      "Monitor changes in mood and stress over time.",
+      "Consider sleep and workload when interpreting changes in wellbeing.",
+      "Record persistent changes rather than relying on a single observation.",
+      "Maintain appropriate recovery and healthy routines."
+    ],
+    "when_flagged": "Persistent changes in mood, stress, concentration, or behavior should prompt closer monitoring.",
+    "professional_care": "Significant or persistent changes in wellbeing should be discussed with an appropriate healthcare or mental-health professional."
+  },
+
+  "immuneGeneral": {
+    "name": "General and Immune Health",
+    "monitor": [
+      "general symptoms",
+      "temperature",
+      "fatigue",
+      "illness-related symptoms",
+      "changes from baseline"
+    ],
+    "guidance": [
+      "Record symptoms consistently.",
+      "Monitor changes in severity and duration.",
+      "Compare observations with the individual's normal baseline.",
+      "Look for persistent or worsening patterns."
+    ],
+    "when_flagged": "Persistent or increasing symptoms should prompt closer monitoring.",
+    "professional_care": "Persistent, severe, or worsening symptoms should be evaluated by an appropriate healthcare professional."
+  },
+
+  "otherSymptoms": {
+    "name": "Other Symptoms",
+    "monitor": [
+      "symptom type",
+      "severity",
+      "duration",
+      "frequency",
+      "body location",
+      "changes over time"
+    ],
+    "guidance": [
+      "Record what the symptom is and when it occurs.",
+      "Record severity and duration.",
+      "Monitor whether it is improving, stable, or worsening.",
+      "Use repeated observations to identify trends."
+    ],
+    "when_flagged": "A symptom that becomes more severe, frequent, or persistent should receive closer monitoring.",
+    "professional_care": "Severe, persistent, or rapidly worsening symptoms should receive appropriate medical evaluation."
+  }
+}

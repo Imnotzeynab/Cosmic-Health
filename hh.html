@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Health History | Cosmic Health</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- SPACE BACKGROUND -->
+
+    <img
+        src="images/space-background.jpg"
+        class="space-background"
+        alt=""
+    >
+
+    <div class="space-overlay"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            COSMIC HEALTH
+        </div>
+
+        <nav class="nav">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="res.html">Health</a>
+                </li>
+
+                <li>
+                    <a href="healthind.html">Check-In</a>
+                </li>
+
+                <li>
+                    <a href="hh.html">History</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+ <li>
+                <a href="assistant.html">Assistant</a>
+            </li>
+           
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="history-page">
+
+        <section class="history-card">
+
+            <div class="history-small-title">
+                COSMIC HEALTH
+            </div>
+
+
+            <h1>
+                HEALTH <span>CHART</span>
+            </h1>
+
+
+            <p class="history-description">
+
+                Track how your health changes over time.
+                Your first weekly health trend becomes available
+                after 7 days of completed health check-ins.
+
+            </p>
+
+
+            <!-- SUMMARY -->
+
+            <div class="history-summary">
+
+                <div class="history-summary-item">
+
+                    <span class="history-summary-label">
+                        CHECK-INS
+                    </span>
+
+                    <span
+                        id="total-checkins"
+                        class="history-summary-value"
+                    >
+                        0
+                    </span>
+
+                </div>
+
+
+                <div class="history-summary-item">
+
+                    <span class="history-summary-label">
+                        WEEKS RECORDED
+                    </span>
+
+                    <span
+                        id="weeks-recorded"
+                        class="history-summary-value"
+                    >
+                        0
+                    </span>
+
+                </div>
+
+
+                <div class="history-summary-item">
+
+                    <span class="history-summary-label">
+                        CURRENT STATUS
+                    </span>
+
+                    <span
+                        id="latest-status"
+                        class="history-summary-value"
+                    >
+                        —
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHART -->
+
+            <div class="history-chart-section">
+
+                <h2>
+                    7-WEEK HEALTH OVERVIEW
+                </h2>
+
+
+                <p class="chart-description">
+
+                    Each bar represents one week of recorded
+                    health data. Select a week to review its
+                    health indicators.
+
+                </p>
+
+
+                <!-- NOT ENOUGH DATA -->
+
+                <div
+                    id="history-empty"
+                    class="history-empty"
+                >
+
+                    <strong>
+                        WEEKLY CHART NOT AVAILABLE YET
+                    </strong>
+
+                    <br><br>
+
+                    COMPLETE AT LEAST
+
+                    <strong>7 DAYS</strong>
+
+                    OF HEALTH CHECK-INS
+
+                    <br>
+
+                    TO UNLOCK YOUR INITIAL HEALTH TREND.
+
+                </div>
+
+
+                <!-- WEEKLY CHART -->
+
+                <div
+                    id="chart-container"
+                    class="weekly-chart-container"
+                    style="display: none;"
+                >
+
+                    <div class="chart-y-axis">
+
+                        <span>5</span>
+                        <span>4</span>
+                        <span>3</span>
+                        <span>2</span>
+                        <span>1</span>
+                        <span>0</span>
+
+                    </div>
+
+
+                    <div class="weekly-chart-scroll">
+
+                        <div
+                            id="weekly-chart"
+                            class="weekly-chart"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="chart-instruction"
+                    class="chart-instruction"
+                    style="display: none;"
+                >
+                    SELECT A WEEK TO REVIEW ITS HEALTH DATA
+                </div>
+
+
+            </div>
+
+
+            <!-- WEEK DETAIL -->
+
+            <section
+                id="week-detail"
+                class="week-detail"
+                style="display: none;"
+            >
+
+                <div class="week-detail-header">
+
+                    <div>
+
+                        <div class="history-small-title">
+                            WEEKLY REPORT
+                        </div>
+
+                        <h2 id="selected-week-title">
+                            WEEK
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        id="close-week-detail"
+                        class="week-close-button"
+                        type="button"
+                    >
+                        CLOSE
+                    </button>
+
+                </div>
+
+
+                <p
+                    id="selected-week-description"
+                    class="chart-description"
+                ></p>
+
+
+                <!-- WEEK SUMMARY -->
+
+                <div class="week-summary">
+
+                    <div class="week-summary-item">
+
+                        <span>
+                            CHECK-INS
+                        </span>
+
+                        <strong id="week-checkins">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="week-summary-item">
+
+                        <span>
+                            AVERAGE SEVERITY
+                        </span>
+
+                        <strong id="week-average">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="week-summary-item">
+
+                        <span>
+                            STATUS
+                        </span>
+
+                        <strong id="week-status">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HEALTH INDICATORS -->
+
+                <div class="health-indicators">
+
+                    <h3>
+                        HEALTH INDICATORS
+                    </h3>
+
+
+                    <div
+                        id="indicator-list"
+                        class="indicator-list"
+                    ></div>
+
+                </div>
+
+
+                <!-- DAILY DATA -->
+
+                <div class="weekly-daily-data">
+
+                    <h3>
+                        RECORDED CHECK-INS
+                    </h3>
+
+                    <div
+                        id="week-daily-list"
+                        class="week-daily-list"
+                    ></div>
+
+                </div>
+
+            </section>
+
+
+            <!-- LEGEND -->
+
+            <div class="history-legend">
+
+                <div class="legend-item">
+
+                    <span class="legend-bar"></span>
+
+                    <span>
+                        Weekly average severity
+                    </span>
+
+                </div>
+
+
+                <div class="legend-item">
+
+                    <span class="legend-scale">
+                        0 — 5
+                    </span>
+
+                    <span>
+                        Severity scale
+                    </span>
+
+                </div>
+
+
+                <div class="legend-item">
+
+                    <span class="legend-no-data">
+                        NO DATA
+                    </span>
+
+                    <span>
+                        No check-in recorded
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOME BUTTON -->
+
+            <button
+                id="back-button"
+                class="continue-btn"
+                type="button"
+            >
+                HOME
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- HEALTH DATA FIRST -->
+
+    <script src="healthdata.js"></script>
+
+    <!-- HISTORY LOGIC -->
+
+    <script src="healthhistory.js"></script>
+
+</body>
+
+</html>

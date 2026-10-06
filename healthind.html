@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Health Indicators | Cosmic Health</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SPACE BACKGROUND -->
+
+    <img
+        src="images/space-background.jpg"
+        class="space-background"
+        alt=""
+    >
+
+    <div class="space-overlay"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            COSMIC HEALTH
+        </div>
+
+        <nav class="nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="res.html">Health</a></li>
+                <li><a href="healthind.html" class="active">Check-In</a></li>
+                <li><a href="hh.html">History</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                 <li>
+                <a href="assistant.html">Assistant</a>
+            </li>
+           
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HEALTH INDICATORS PAGE -->
+
+    <main class="health-page">
+
+        <div class="health-heading">
+
+            <p class="small-title">
+                MISSION HEALTH MONITORING
+            </p>
+
+            <h1>
+                HOW ARE YOU
+                <span>FEELING TODAY?</span>
+            </h1>
+
+            <p class="instruction">
+                Select the health indicators you want to check.
+            </p>
+
+        </div>
+
+
+        <!-- HEALTH INDICATORS -->
+
+        <section class="indicators">
+
+            <a href="ms.html">
+                <button class="indicator-card">
+                    <div class="indicator-number">01</div>
+                    <div class="indicator-info">
+                        <h2>Musculoskeletal</h2>
+                        <p>Muscles, bones, joints</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </a>
+
+            <a href="cpres.html">
+                <button class="indicator-card">
+                    <div class="indicator-number">02</div>
+                    <div class="indicator-info">
+                        <h2>Cardiovascular</h2>
+                        <p>Heart and circulation</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </a>
+
+            <a href="imdes.html">
+                <button class="indicator-card">
+                    <div class="indicator-number">03</div>
+                    <div class="indicator-info">
+                        <h2>Immune / General</h2>
+                        <p>Immune system, general health</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </a>
+
+            <a href="bldes.html">
+                <button class="indicator-card">
+                    <div class="indicator-number">04</div>
+                    <div class="indicator-info">
+                        <h2>Respiratory</h2>
+                        <p>Breathing and lungs</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </a>
+
+            <a href="mbdes.html">
+                <button class="indicator-card">
+                    <div class="indicator-number">05</div>
+                    <div class="indicator-info">
+                        <h2>Mental &amp; Behavioral</h2>
+                        <p>Mood, stress and anxiety</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </a>
+
+            <a href="s.html">
+                <button class="indicator-card">
+                    <div class="indicator-number">06</div>
+                    <div class="indicator-info">
+                        <h2>Sleep</h2>
+                        <p>Sleep quality and fatigue</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </a>
+
+            <a href="otdes.html">
+                <button class="indicator-card">
+                    <div class="indicator-number">07</div>
+                    <div class="indicator-info">
+                        <h2>Other Symptoms</h2>
+                        <p>Fever, pain, digestive symptoms, etc.</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </a>
+
+        </section>
+
+
+        <div class="center-btn">
+
+            <a href="sym.html" class="continue-btn">
+                CONTINUE
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- HEALTH DATA (must load first) -->
+    <script src="healthdata.js"></script>
+
+    <!-- BLOCKS A SECOND CHECK-IN WITHIN 24 HOURS -->
+    <script src="checkin-guard.js"></script>
+
+</body>
+
+</html>

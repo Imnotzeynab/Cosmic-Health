@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Cosmic Health · Body Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--bg:#070b18;--panel:#101830;--text:#e8eefc;--muted:#8ea0c8;--accent:#4da3ff;--alert:#ff4d5e;--line:#22305a}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,var(--panel),var(--bg) 70%) fixed;background-color:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:980px;margin:0 auto;padding:16px;display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:760px){main{grid-template-columns:1.3fr 1fr}}
+h1{font-size:20px;margin:0 0 4px}p{margin:0;color:var(--muted);font-size:14px}
+#stage{position:relative;height:min(68vh,560px);min-height:360px;border:1px solid var(--line);border-radius:16px;background:rgba(77,163,255,.05);touch-action:none;overflow:hidden}
+#stage canvas{display:block;width:100%;height:100%;cursor:crosshair}
+#hint{position:absolute;left:12px;bottom:10px;font-size:12px;color:var(--muted);pointer-events:none}
+#hover{position:absolute;top:10px;left:12px;font-size:13px;font-weight:600;pointer-events:none}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+button{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:8px 14px;cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+button:disabled{opacity:.4;cursor:not-allowed}
+.chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,77,94,.14);border:1px solid var(--alert);border-radius:999px;padding:5px 6px 5px 12px;font-size:13px}
+.chip button{border:0;padding:0 6px;font-size:16px;line-height:1;color:var(--alert)}
+#list{display:flex;gap:8px;flex-wrap:wrap;min-height:34px}
+#msg{font-size:13px;color:var(--accent);min-height:18px}
+#msg.err{color:var(--alert)}
+</style></head><body>
+<main>
+<section>
+<h1>🧍 Where does it hurt?</h1>
+<p style="margin-bottom:12px">Drag to rotate. Tap any spot on the body to mark it.</p>
+<div id="stage"><div id="hover"></div><div id="hint">Drag = rotate · Tap = select</div></div>
+<div class="row" style="margin-top:10px"><button id="front">Front</button><button id="back">Back</button></div>
+</section>
+<aside class="card">
+<h1 style="font-size:17px">Selected areas</h1>
+<div id="list"></div>
+<div class="row"><button class="primary" id="done" disabled>Done</button><button id="clear">Clear all</button></div>
+<div id="msg"></div>
+</aside>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="healthdata.js"></script>
+<script src="bodymap.js"></script>
+</body></html>

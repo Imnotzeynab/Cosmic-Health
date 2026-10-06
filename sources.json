@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "name": "Cosmic Health Sources",
+    "version": "1.0",
+    "purpose": "Sources supporting the health-monitoring guidance used by the Cosmic Health assistant",
+    "disclaimer": "Cosmic Health is an educational decision-support prototype. It is not an official NASA medical system and does not replace professional medical care."
+  },
+
+  "sources": [
+    {
+      "id": "nasa_std_3001",
+      "title": "NASA-STD-3001",
+      "organization": "NASA",
+      "type": "technical_standard",
+      "description": "NASA's human-system standard covering requirements relevant to human spaceflight systems and crew health and performance.",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-3001",
+      "used_for": [
+        "crew health",
+        "human performance",
+        "environmental health",
+        "medical considerations",
+        "monitoring and risk management"
+      ]
+    },
+
+    {
+      "id": "nasa_human_research_program",
+      "title": "NASA Human Research Program",
+      "organization": "NASA",
+      "type": "research_program",
+      "description": "NASA research focused on protecting astronaut health and performance during spaceflight.",
+      "url": "https://www.nasa.gov/hrp/",
+      "used_for": [
+        "human health risks",
+        "human performance",
+        "spaceflight health research"
+      ]
+    },
+
+    {
+      "id": "nasa_human_systems_integration",
+      "title": "NASA Human Systems Integration",
+      "organization": "NASA",
+      "type": "technical_resource",
+      "description": "NASA resources related to integrating human health, performance, and system considerations into human spaceflight.",
+      "url": "https://www.nasa.gov/humans-in-space/",
+      "used_for": [
+        "human systems",
+        "crew performance",
+        "human spaceflight"
+      ]
+    }
+  ],
+
+  "category_sources": {
+
+    "sleep": [
+      "nasa_std_3001",
+      "nasa_human_research_program"
+    ],
+
+    "cardiovascular": [
+      "nasa_std_3001",
+      "nasa_human_research_program"
+    ],
+
+    "musculoskeletal": [
+      "nasa_std_3001",
+      "nasa_human_research_program"
+    ],
+
+    "respiratory": [
+      "nasa_std_3001",
+      "nasa_human_research_program"
+    ],
+
+    "mentalBehavioral": [
+      "nasa_std_3001",
+      "nasa_human_research_program"
+    ],
+
+    "immuneGeneral": [
+      "nasa_std_3001",
+      "nasa_human_research_program"
+    ],
+
+    "otherSymptoms": [
+      "nasa_std_3001",
+      "nasa_human_research_program"
+    ]
+  }
+}

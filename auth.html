@@ -1,0 +1,364 @@
+:::writing{variant="standard" id="58321" title="Updated auth.html"}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | Cosmic Health</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        COSMIC HEALTH
+    </div>
+
+    <nav class="nav">
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+ <li>
+                <a href="assistant.html">Assistant</a>
+            </li>
+           
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="auth-page">
+
+
+    <div class="auth-container">
+
+
+        <!-- =================================================
+             LOGIN
+             ================================================= -->
+
+        <div id="login-section">
+
+            <p class="section-label">
+                WELCOME BACK
+            </p>
+
+            <h1>
+                LOGIN
+            </h1>
+
+            <p class="auth-intro">
+                Sign in to access your health data.
+            </p>
+
+
+            <form id="login-form">
+
+
+                <label for="login-username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="login-username"
+                    required
+                    autocomplete="username"
+                >
+
+
+                <label for="login-password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="login-password"
+                    required
+                    autocomplete="current-password"
+                >
+
+
+                <p
+                    id="login-error"
+                    class="auth-message error"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    LOGIN
+                </button>
+
+            </form>
+
+
+            <button
+                type="button"
+                id="show-forgot-password"
+                class="forgot-button"
+            >
+                Forgot password?
+            </button>
+
+
+            <p class="auth-switch">
+
+                Don't have an account?
+
+                <button
+                    type="button"
+                    id="show-register"
+                    class="text-button"
+                >
+                    Register
+                </button>
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             REGISTER
+             ================================================= -->
+
+        <div
+            id="register-section"
+            style="display: none;"
+        >
+
+            <p class="section-label">
+                NEW USER
+            </p>
+
+            <h1>
+                REGISTER
+            </h1>
+
+            <p class="auth-intro">
+                Create your NASA HEALTH account.
+            </p>
+
+
+            <form id="register-form">
+
+
+                <label for="register-username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="register-username"
+                    required
+                    autocomplete="username"
+                >
+
+
+                <label for="register-password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="register-password"
+                    required
+                    minlength="6"
+                    autocomplete="new-password"
+                >
+
+
+                <label for="register-confirm">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="register-confirm"
+                    required
+                    minlength="6"
+                    autocomplete="new-password"
+                >
+
+
+                <p
+                    id="register-error"
+                    class="auth-message error"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    CREATE ACCOUNT
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    id="show-login"
+                    class="text-button"
+                >
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FORGOT PASSWORD
+             ================================================= -->
+
+        <div
+            id="forgot-section"
+            style="display: none;"
+        >
+
+            <p class="section-label">
+                ACCOUNT RECOVERY
+            </p>
+
+            <h1>
+                RESET PASSWORD
+            </h1>
+
+            <p class="auth-intro">
+                Enter your username to create a new password.
+            </p>
+
+
+            <form id="forgot-form">
+
+
+                <label for="forgot-username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="forgot-username"
+                    required
+                    autocomplete="username"
+                >
+
+
+                <label for="forgot-password">
+                    New Password
+                </label>
+
+                <input
+                    type="password"
+                    id="forgot-password"
+                    required
+                    minlength="6"
+                    autocomplete="new-password"
+                >
+
+
+                <label for="forgot-confirm">
+                    Confirm New Password
+                </label>
+
+                <input
+                    type="password"
+                    id="forgot-confirm"
+                    required
+                    minlength="6"
+                    autocomplete="new-password"
+                >
+
+
+                <p
+                    id="forgot-error"
+                    class="auth-message error"
+                ></p>
+
+
+                <p
+                    id="forgot-success"
+                    class="auth-message success"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    RESET PASSWORD
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Remember your password?
+
+                <button
+                    type="button"
+                    id="back-to-login"
+                    class="text-button"
+                >
+                    Back to Login
+                </button>
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+<script src="auth.js"></script>
+
+</body>
+
+</html>
