@@ -43,7 +43,7 @@ Cosmic Health is an interactive dashboard designed to help astraunauts track, as
 
 ##  Demo
 
-[Live demo link]
+https://drive.google.com/file/d/1pj0kp72tFbOWyQeRzugv8lhP_fDD9YfQ/view?usp=sharing
 
 ## 
 
