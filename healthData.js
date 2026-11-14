@@ -1263,7 +1263,31 @@ function getHealthHistory() {
 /* =========================================================
    TODAY CHECK-IN
 ========================================================= */
+/* =========================================================
+   BODY AREAS — 3D BODY MAP
+========================================================= */
 
+function saveBodyAreas(areas) {
+
+    const data = getHealthData();
+
+    data.bodyAreas = Array.isArray(areas)
+        ? areas
+        : [];
+
+    saveHealthData(data);
+
+}
+
+function getBodyAreas() {
+
+    const data = getHealthData();
+
+    return Array.isArray(data.bodyAreas)
+        ? data.bodyAreas
+        : [];
+
+}
 function hasCheckInForToday() {
 
     return hasValidCurrentCheckIn(
