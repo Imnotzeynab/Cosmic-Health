@@ -40,6 +40,10 @@ Cosmic Health is an interactive dashboard designed to help astraunauts track, as
 - JavaScript
 - [AI technology you're actually using]
 - LocalStorage
+- 
+## Link to website
+
+https://imnotzeynab.github.io/Cosmic-Health/
 
 ##  Demo
 
